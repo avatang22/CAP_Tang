@@ -1,93 +1,114 @@
-<html>
-	<head>
-		<link href="resume.css" rel="stylesheet">
-		<title>Ava resume</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	</head>
+body {
+    font-family: "Helvetica", "Helvetica", "Helvetica", "Helvetica", "Helvetica", monospace;
+    font-size: 12px;
+    max-width: 960px;
+    margin: auto;
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: .6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
-	<body>
-    <ul>
-  <li><a href="index.html">Home</a></li>
-   <li><a href="aboutMe.html">About Me</a></li>
-  <li><a href="resume.html">Resume</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="future.html">Future</a></li>
-</ul>
-		<header id="header">
-			<!-- resume header with your name and title -->
-			<h1 class="fontStyle">AT</h1>
-			<hr>
-			R E S U M E 
-			<hr>
-		</header>
-		<main>
-			<article id="mainLeft">
-				<section>
-					<h2>CONTACT</h2>
-					<!-- contact info including social media -->
-                    <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:your-email@example.com">
-                      </a>
-                    </p>
-                    <p>
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="github.com/gh-username"></a>
-                    </p>
-                    <p>
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="linkedin.com/linkedin-username"></a>
-                    </p>
-				</section>
-				<section>
-					<h2>SKILLS</h2>
-					<!-- your skills -->
-                    <p>JavaScript</p>
-				</section>
-				<section>
-					<h2>EDUCATION</h2>
-					<!-- your education -->
-                    <h3>College</h3>
-                    <p>
-                        New York University 
-                    </p>
-                    <p>
-                        2026 - 2030
-                    </p>
-          <h3>High School</h3>
-                    <p>
-                        Immaculate Heart High School
-                    </p>
-                    <p>
-                        2022 - 2026
-                    </p>
-				</section>            
-			</article>
-			<article id="mainRight">
-				<section>
-					<h2>ABOUT</h2>
-					<!-- about you -->
-					<p>I am a senior in High School. While taking AP Computer Science Principles, I learned about JavaScript and basic coding. I am interested in pursuing a field that intersects art/design with technology. I really enjoy creating immersive and interactive spaces for my community and hope to continue this in a professional field. My hobbies are fashion, art, music, and cinematography.  
-          </p>
-				</section>
-				<section>
-					<h2>WORK EXPERIENCE</h2>
-					<!-- your work experience -->
-                    <h3>Camp Counselor | Swim Instructor</h3>
-                    <p>
-                            Marlborough Summer Camp | 2024 
-                            YMCA Santa Monica | 2024 
-                    </p>
-                    <p>
-                            
-                        </p> Taught private swim lessons and led art classes.
-                    <ul>
-                            <li>Soccer Team Won CIF | 2026 </li>
-                            <li></li>
-                            <li></li>
-                    </ul>
-				</section>
-			</article>
-		</main>
-	</body>
-</html>
+h1.fontStyle {
+  font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+main { 
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 3em;
+}
+header {
+    text-align: center;
+    margin: auto 2em;
+}
+
+section {
+    margin: auto 1em 4em 2em;
+}
+
+i {
+    margin-right: .5em;
+}
+
+p {
+    margin: .2em auto
+}
+
+hr {
+    border: none;
+    background-color: lightgray;
+    height: 1px;
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+#mainLeft {
+    border-right: 1px solid lightgray;
+}
+
+
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+}
+
+.container {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.p3 {
+  font-family: "Helvetica", "Helvetica", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+ul li {
+  float: left;
+  padding: 20px;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: pink;
+}
